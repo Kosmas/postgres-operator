@@ -57,6 +57,7 @@ This will download the `pgo` client and provide instructions for how to easily u
 
 
 ```
+export PATH="$PATH:${HOME?}/.pgo/pgo"
 export PGOUSER="${HOME?}/.pgo/pgo/pgouser"
 export PGO_CA_CERT="${HOME?}/.pgo/pgo/client.crt"
 export PGO_CLIENT_CERT="${HOME?}/.pgo/pgo/client.crt"
@@ -69,6 +70,7 @@ If you wish to permanently add these variables to your environment, you can run 
 
 ```
 cat <<EOF >> ~/.bashrc
+export PATH="$PATH:${HOME?}/.pgo/pgo"
 export PGOUSER="${HOME?}/.pgo/pgo/pgouser"
 export PGO_CA_CERT="${HOME?}/.pgo/pgo/client.crt"
 export PGO_CLIENT_CERT="${HOME?}/.pgo/pgo/client.crt"
